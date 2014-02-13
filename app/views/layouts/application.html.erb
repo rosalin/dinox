@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dinox</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+  
+  <header>
+    <div class="center">
+      
+      <%= link_to(image_tag("logo.png", :id => 'imglogo'), root_path) %>      
+      
+      <nav>
+        <ul id="menu">
+
+          <li id="li_empresa">
+            <%= image_tag 'empresa.png' %> <%=  link_to 'A empresa',  empresa_home_index_path, :remote=> :true, :id => 'li_empresa' %>              
+          </li>
+
+          <li id="li_produtos">
+            <%= image_tag 'produtos.png' %> <%= link_to 'Produtos', produtos_home_index_path, :remote=> :true, :id => 'li_produtos' %>
+          </li>
+
+          <li id="li_parceiro">
+            <%= image_tag 'parceiro.png' %> <%= link_to 'Seja um parceiro', root_path, :id => 'li_parceiro' %>
+          </li>
+
+          <li id="li_contato">
+            <%= image_tag 'contato.png' %> <%= link_to 'Contato', root_path, :id => 'li_contato' %>
+          </li>
+
+        </ul>
+      </nav>
+      
+    </div>
+    
+  </header>
+  
+  <div id="yield-box">
+    <%= yield %>
+  </div>
+  
+  <footer>    
+        
+    <div class="center">
+      <div id="rodape">
+
+            <div class="itemrodape">
+              <%= image_tag 'localizacao.png' %>
+              <div class="txtrodape">
+                <p1>Localização</p1>
+                <p class="txt">
+                  Rua Ari Rosário, 30 - Distrito Industrial 2 Garça - São Paulo - CEP: 17.400-000
+                </p>
+              </div>
+            </div>
+          
+            <div class="itemrodape">
+              <%= image_tag 'telefone.png' %>
+              <div class="txtrodape">
+                <p1>Telefone</p1>
+                <p class="txt">
+                  Fone: (14)3471-2545 <br> Fone/Fax: (14)3406-4636              
+                </p>
+              </div>
+            </div>
+          
+            <div class="itemrodape2">
+              <%= image_tag 'email.png' %>
+              <div class="txtrodape2">
+                <p1>E-mail</p1>
+                <p class="txt">
+                  dinox@dinoxmarcadores.com.br  
+                </p>
+              </div>
+            </div>
+        
+        </div>
+      
+    </div>
+    
+    <div id="rodape2">
+      <div class="center">
+        <p>Todos os direitos reservados</p>
+      </div>
+    </div>
+    
+  </footer>  
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+/* 
+    Document   : empresa
+    Created on : 13/02/2014, 11:43:57
+    Author     : eduardo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#conteudo_empresa {
+    padding-top: 40px;
+    width: 1024px;
+    display: table;
+}
+
+#texto_empresa {
+    width: 550px;
+    line-height: 25px;
+    font-size: 12pt;
+    text-align: justify;
+    padding-left: 10px;
+    color: #333333;
+}
+
+#conteudo_empresa img {
+    float: right;
+    padding-top: 30px;
+}

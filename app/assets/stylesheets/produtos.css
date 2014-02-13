@@ -1,0 +1,24 @@
+/* 
+    Document   : produtos
+    Created on : 13/02/2014, 13:59:52
+    Author     : eduardo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.conteudo_paginas h3 {
+    color: #333333;
+    font-family: Arial;
+    font-size: 14pt;
+    font-weight: normal;
+    text-align: center;
+}
+
+#texto_produtos {
+    width: 1024px;
+    line-height: 25px;
+    font-size: 11.5pt;
+    color: #333333;
+    font-family: Arial;
+    padding-left: 10px;
+}
