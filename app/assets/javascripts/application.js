@@ -18,6 +18,8 @@
 
 $(document).ready(function() {
     
+    $(".rslides").responsiveSlides();
+    
     var abas = 'ul#menu li';
     var id;
     var id_link;   
@@ -39,4 +41,21 @@ $(document).ready(function() {
         $(abas + '#' + id_link).addClass('selected');
     });
     
+    /*
+    var link_produto = '#li_produtos a';
+    var span = '.span';
+    
+    $(link_produto).mouseover(function (){
+        $('.span').addClass('display');
+        
+        $(link_produto).mouseout(function (){
+            $('.li_pro').addClass('selected');
+        });
+    });
+    
+    $(span).mouseout(function (){
+        $('.li_pro').removeClass('selected');
+        $('.span').removeClass('display');
+    });
+    */
 });

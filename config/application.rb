@@ -11,6 +11,9 @@ end
 
 module Dinox
   class Application < Rails::Application
+    
+    Site::MAIL_TO = 'eduardo@neemo.com.br'
+    
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

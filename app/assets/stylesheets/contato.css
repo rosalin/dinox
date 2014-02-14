@@ -1,0 +1,38 @@
+/* 
+    Document   : contato
+    Created on : 14/02/2014, 14:24:44
+    Author     : eduardo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#contato {
+    display: table;
+    width: 1024px;
+}
+
+#contato img {
+    float: right;
+}
+
+.contact_form {
+    margin-top: 60px;
+    width: 410px;
+    
+}
+
+.contact_form .box-dados input{
+    border: 1px solid #E6E6E6;
+    font-size: 14pt;
+    margin-top: 15px;
+    width: 180px;
+    height: 30px;
+    
+}
+
+.contact_form .box-message textArea{
+    border: 1px solid #E6E6E6;
+    font-size: 14pt;
+    height: 140px;
+    width: 410px;
+}

@@ -21,21 +21,76 @@
             <%= image_tag 'empresa.png' %> <%=  link_to 'A empresa',  empresa_home_index_path, :remote=> :true, :id => 'li_empresa' %>              
           </li>
 
-          <li id="li_produtos">
+          <li id="li_produtos" class="li_pro">
             <%= image_tag 'produtos.png' %> <%= link_to 'Produtos', produtos_home_index_path, :remote=> :true, :id => 'li_produtos' %>
+          
+            <span>
+              <nav id="nav">
+          
+          <ul id="ul2">
+            <li>
+              <%= link_to '-Esporas' %>
+            </li>
+            
+            <li>
+              <%= link_to '-Abridor de boca(Bovino)' %>
+            </li>
+            
+            <li>
+               <%= link_to '-Cbrestos' %>
+            </li>
+            <li>
+              <%= link_to '-Esporas' %>
+            </li>
+            
+            <li>
+              <%= link_to '-Abridor de boca(Bovino)' %>
+            </li>
+            
+            <li>
+               <%= link_to '-Cbrestos' %>
+            </li>
+          </ul>
+          
+          <ul id="ul1">
+            <li>
+              <%= link_to '-Flambadores a gás' %>
+            </li>
+            
+            <li>
+              <%= link_to '-Mochadores', produtos_home_index_path, :remote=> :true, :id => 'li_produtos' %>
+            </li>
+            
+            <li>
+               <%= link_to '-Marcadores' %>
+            </li>
+            <li>
+              <%= link_to '-Flambadores a gás' %>
+            </li>
+            
+            <li>
+              <%= link_to '-Mochadores' %>
+            </li>
+            
+            <li>
+               <%= link_to '-Marcadores' %>
+            </li>
+          </ul>
+          
+        </nav> 
+            </span>
           </li>
-
+          
           <li id="li_parceiro">
             <%= image_tag 'parceiro.png' %> <%= link_to 'Seja um parceiro', root_path, :id => 'li_parceiro' %>
           </li>
 
           <li id="li_contato">
-            <%= image_tag 'contato.png' %> <%= link_to 'Contato', root_path, :id => 'li_contato' %>
+            <%= image_tag 'contato.png' %> <%= link_to 'Contato', new_site_contact_path, :id => 'li_contato' %>
           </li>
 
         </ul>
       </nav>
-      
     </div>
     
   </header>

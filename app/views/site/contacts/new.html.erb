@@ -1,0 +1,25 @@
+
+<div class="titulo_paginas">
+    <div class="center">
+      <p class="txt_titulo_paginas">Contato</p>
+    </div>
+</div>
+  
+
+<div class="conteudo_paginas">
+      
+  <div class="center">
+      <div id="contato">
+    
+        <p>Preencha os campos abaixo e seja um parceiro de negócios Dinox!</p>
+
+        <%= flash[:notice] %>
+
+        <%= image_tag 'contatoemail.png' %>
+
+        <%= render :partial => '/site/contacts/form' %>
+      
+      </div>
+      
+  </div>
+</div>

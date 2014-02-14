@@ -1,5 +1,19 @@
 Dinox::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
+  
+  ActionMailer::Base.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => "587",
+  :domain               => "neemo.com.br",
+  :user_name            => "mailer@neemo.com.br",
+  :password             => "neemo2013",
+  :authentication       => "plain",
+  :enable_starttls_auto => true
+  }
+
+  config.action_mailer.raise_delivery_errors = true
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
