@@ -1,21 +1,21 @@
 
 <div class="contact_form">
-    <%= simple_form_for @site_contact do |f| %>
+    <%= simple_form_for @site_contact, :remote => :true do |f| %>
           <div class="box-dados">
-            <%= f.input :name, :label=>"Nome" %>
-            <%= f.input :cidade %>
-            <%= f.input :estado %>
-            <%= f.input :cep %>
-            <%= f.input :telefone %>
-            <%= f.input :email,:label=> "E-mail"  %>
+            <%= f.input :name, :label=>"Nome:"%>
+            <%= f.input :estado, :label=>"Estado:", collection: ["SP", "RJ"] %>
+            <%= f.input :cidade, :label=>"Cidade:" %>            
+            <%= f.input :cep, :label=>"Cep:" %>
+            <%= f.input :telefone, :label=>"Fone:" %>
+            <%= f.input :email,:label=> "E-mail:"  %>
                         
           </div>
 
           <div class="box-message">
-            <%= f.input :message, :label=>"Menssagem", :as => :text, :required=> false %>
+            <%= f.input :message, :label=>"Menssagem: ", :as => :text, :required=> false %>
           </div>
           <div class="submit">
-           <%= f.submit "Enviar" %>
+           <%= f.submit "Enviar", :id => 'enviar' %>
           </div>
     <% end %>
 </div>

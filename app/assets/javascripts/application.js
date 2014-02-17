@@ -41,6 +41,7 @@ $(document).ready(function() {
         $(abas + '#' + id_link).addClass('selected');
     });
     
+    
     /*
     var link_produto = '#li_produtos a';
     var span = '.span';
