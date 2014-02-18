@@ -240,3 +240,48 @@ header span a {
 #li_produtos span a:hover {
     color: #0073AD;
 }
+
+.rslides_tabs {
+  list-style: none;
+  padding: 0;
+  font-size: 0px;
+  list-style: none;
+  margin: 0 auto 50px;
+  max-width: 540px;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  }
+
+.rslides_tabs li {
+  display: inline;
+  float: none;
+  margin-right: 1px;
+  }
+
+.rslides_tabs a {
+  width: auto;
+  line-height: 25px;
+  padding: 6px 6px;
+  height: auto;
+  display: inline;
+  margin-left: 10px;
+  }
+
+.rslides_tabs li:first-child {
+  margin-left: 0;
+  }
+
+.rslides_tabs .rslides_here a {
+    background: #0073AD;
+    color: #0073AD;
+    font-weight: bold;
+    border: 1px solid;  
+  }
+
+a {
+  color: #E6E6E6;
+  background: #E6E6E6;
+  border: 1px solid;
+  text-decoration: none;
+  }

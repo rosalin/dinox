@@ -5,7 +5,7 @@
             <%= f.input :name, :label=>"Nome:"%>
             <%= f.input :estado, :label=>"Estado:", collection: ["SP", "RJ"] %>
             <%= f.input :cidade, :label=>"Cidade:" %>            
-            <%= f.input :cep, :label=>"Cep:" %>
+            <%= f.input :cep, :label=>"Cep:", :required=> true %>
             <%= f.input :telefone, :label=>"Fone:" %>
             <%= f.input :email,:label=> "E-mail:"  %>
                         

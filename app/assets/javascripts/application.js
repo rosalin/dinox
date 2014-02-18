@@ -18,7 +18,9 @@
 
 $(document).ready(function() {
     
-    $(".rslides").responsiveSlides();
+    $(".rslides").responsiveSlides({
+        pager: true
+    });
     
     var abas = 'ul#menu li';
     var id;
