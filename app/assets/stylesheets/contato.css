@@ -14,7 +14,7 @@
 #contato img {
     float: right;
     padding-right: 90px;
-    margin-top: 45px;
+    margin-top: 15px;
 }
 
 #contato p {
@@ -122,6 +122,22 @@
     text-align: center;
 }
 
+.div-ajax-carregamento-pagina2
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 795px;
+    z-index: 9999997;
+    /* transparência compatível com os navegadores comuns.*/
+    opacity:0.45;
+    -moz-opacity: 0.45;
+    filter: alpha(opacity=45);
+    background: black;
+    text-align: center;
+}
+
 #load {
     position: fixed;
     left:50%;
@@ -130,5 +146,38 @@
 
 #flash {
     margin-top: 50px;
-    margin-bottom: -40px;
+    padding-bottom: -40px;
+}
+
+#site_contact_rua {
+    width: 245px;
+    margin-right: 0px;
+}
+
+#site_contact_numero {
+    width: 100px;
+    margin-right: 0px;
+}
+
+.site_contact_numero {
+    float: right;
+    width: 160px;
+}
+
+.site_contact_rua {
+    width: 370px;
+}
+
+#site_contact_bairro {
+    width: 425px;
+    margin-right: 0px;
+}
+
+#parceiro {
+    padding-bottom: 70px;
+}
+
+#parceiro #site_contact_email {
+    width: 425px;   
+    margin-right: 0px;
 }

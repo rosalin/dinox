@@ -1,0 +1,18 @@
+
+$("#yield-box").html('<%= escape_javascript(render(:partial => 'parceiro/new'))%>');
+ 
+$('#load').hide();
+
+$('#enviar').click(function() {  
+
+  $(document).ajaxStart(function() {
+      $('.div-carregamento-pagina').addClass('div-ajax-carregamento-pagina2');  
+      $('#load').show();      
+  });
+  
+  $(document).ajaxStop(function() {
+      $('.div-carregamento-pagina').removeClass('div-ajax-carregamento-pagina2'); 
+      $('#load').hide();
+  });
+   
+});

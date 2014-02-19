@@ -1,0 +1,31 @@
+
+<div class="div-carregamento-pagina"></div> 
+
+<%= image_tag 'loadinfo.gif', :id => 'load' %>
+
+<div class="titulo_paginas">
+    <div class="center">
+      <p class="txt_titulo_paginas">Parceiros</p>
+    </div>
+</div>
+
+<div class="conteudo_paginas">
+  <div class="center">
+    
+    <div id="parceiro">
+      <div id="contato">
+
+        <p>Preencha os campos abaixo e seja um parceiro de negócios Dinox!</p>
+
+        <div id="flash"><%= flash[:notice] %></div> 
+
+        <%= image_tag 'sejaparceiro.png' %>
+
+        <%= render :partial => '/parceiro/form' %>
+
+      </div>
+      
+    </div>
+    
+  </div>
+</div>

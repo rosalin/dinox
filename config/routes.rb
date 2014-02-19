@@ -60,6 +60,13 @@ Dinox::Application.routes.draw do
          get 'produtos'
        end
      end
+           
+  resources :parceiro do
+    collection do
+      get 'new'
+      post 'create_parceiro'
+    end
+  end
   
   
   root :to => 'home#index'
