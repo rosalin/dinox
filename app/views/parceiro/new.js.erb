@@ -2,6 +2,7 @@
 $("#yield-box").html('<%= escape_javascript(render(:partial => 'parceiro/new'))%>');
  
 $('#load').hide();
+$('.flash').hide();
 
 $('#enviar').click(function() {  
 
@@ -13,6 +14,19 @@ $('#enviar').click(function() {
   $(document).ajaxStop(function() {
       $('.div-carregamento-pagina').removeClass('div-ajax-carregamento-pagina2'); 
       $('#load').hide();
+      $(".flash").show();
+      $(".flash").fadeOut(10000);
   });
    
+});
+
+$('#li_parceiro a').click(function() {
+      $(document).ajaxStart(function() {
+      $('#load').hide();
+      $('.div-carregamento-pagina').removeClass('div-ajax-carregamento-pagina2'); 
+  });
+  
+  $(document).ajaxStop(function() {
+    $(".flash").hide();
+  });
 });

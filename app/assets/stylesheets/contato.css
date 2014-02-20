@@ -144,9 +144,14 @@
     top:50%;
 }
 
-#flash {
-    margin-top: 50px;
-    padding-bottom: -40px;
+.flash {
+    background: #FAA;
+    border: 1px solid #F00;
+    height: 60px;
+    text-align: center;
+    color: #F00;
+    font-size: 14pt;
+    line-height: 60px;
 }
 
 #site_contact_rua {

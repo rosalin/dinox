@@ -7,7 +7,7 @@
 */
 
 .conteudo_paginas h3 {
-    color: #333333;
+    color: #333;
     font-family: Arial;
     font-size: 14pt;
     font-weight: normal;
@@ -22,3 +22,21 @@
     font-family: Arial;
     padding-left: 10px;
 }
+
+#ul_produtos {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#ul_produtos li {
+    list-style: none;
+    float: left;
+    margin-right: 33px;
+    padding-bottom: 35px;
+}
+
+#ul_produtos img{
+    width: 300px;
+    height: 175px;
+    border: 2px solid #E6E6E6;
+}   

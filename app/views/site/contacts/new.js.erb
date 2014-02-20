@@ -2,20 +2,31 @@
 $("#yield-box").html('<%= escape_javascript(render(:partial => 'site/contacts/new'))%>');
 
 $('#load').hide();
+$(".flash").hide(); 
 
 $('#enviar').click(function() {  
 
   $(document).ajaxStart(function() {
       $('.div-carregamento-pagina').addClass('div-ajax-carregamento-pagina');  
       $('#load').show();
-      
   });
   
   $(document).ajaxStop(function() {
       $('.div-carregamento-pagina').removeClass('div-ajax-carregamento-pagina'); 
-      $('#load').hide();
+      $('#load').hide();      
+      $(".flash").show();
+      $(".flash").fadeOut(10000);
   });
    
 });
 
-    
+$('header nav ul li a').click(function() {
+      $(document).ajaxStart(function() {
+      $('#load').hide();
+      $('.div-carregamento-pagina').removeClass('div-ajax-carregamento-pagina'); 
+  });
+  
+  $(document).ajaxStop(function() {
+    $(".flash").hide();
+  });
+});

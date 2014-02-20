@@ -22,59 +22,39 @@
           </li>
 
           <li id="li_produtos" class="li_pro">
-            <%= image_tag 'produtos.png' %> <%= link_to 'Produtos', produtos_home_index_path, :remote=> :true, :id => 'li_produtos' %>
+            <%= image_tag 'produtos.png' %> <%= link_to 'Produtos', new_produto_path(:param => "new"), :remote => :true, :id => 'li_produtos' %>
           
             <span>
               <nav id="nav">
           
                 <ul id="ul2">
                   <li>
-                    <%= link_to '-Esporas' %>
+                    <%= link_to '-Esporas', new_produto_path(:param => 'esporas'), :remote => :true %>
                   </li>
 
                   <li>
-                    <%= link_to '-Abridor de boca(Bovino)' %>
-                  </li>
-
-                  <li>
-                     <%= link_to '-Cabrestos' %>
-                  </li>
-                  <li>
-                    <%= link_to '-Esporas' %>
-                  </li>
-
-                  <li>
-                    <%= link_to '-Abridor de boca(Bovino)' %>
+                    <%= link_to '-Tábua personalizada', new_produto_path(:param => "tabuas"), :remote => :true %>
                   </li>
 
                   <li>
                      <%= link_to '-Cabrestos' %>
                   </li>
+                  
                 </ul>
 
                 <ul id="ul1">
                   <li>
-                    <%= link_to '-Flambadores a gás' %>
+                    <%= link_to '-Flambadores a gás', new_produto_path(:param => "flambadores"), :remote => :true %>
                   </li>
 
                   <li>
-                    <%= link_to '-Mochadores', produtos_home_index_path, :remote=> :true, :id => 'li_produtos' %>
+                    <%= link_to '-Mochadores', new_produto_path(:param => "mochadores"), :remote => :true %>
                   </li>
 
                   <li>
-                     <%= link_to '-Marcadores' %>
+                     <%= link_to '-Marcadores', new_produto_path(:param => "marcadores"), :remote => :true %>
                   </li>
-                  <li>
-                    <%= link_to '-Flambadores a gás' %>
-                  </li>
-
-                  <li>
-                    <%= link_to '-Mochadores' %>
-                  </li>
-
-                  <li>
-                     <%= link_to '-Marcadores' %>
-                  </li>
+                  
                 </ul>
 
               </nav> 

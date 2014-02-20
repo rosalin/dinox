@@ -68,6 +68,14 @@ Dinox::Application.routes.draw do
     end
   end
   
+  resources :produto do
+    collection do
+      get 'new'
+      get 'flambadores'
+      get 'marcadores'
+    end
+  end
+  
   
   root :to => 'home#index'
   
