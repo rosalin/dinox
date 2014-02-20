@@ -29,30 +29,34 @@
           
                 <ul id="ul2">
                   <li>
-                    <%= link_to '-Esporas', new_produto_path(:param => 'esporas'), :remote => :true %>
+                    <%= link_to '-Esporas', new_produto_path(:param => 'esporas'), :remote => :true, :id => 'li_produtos'  %>
                   </li>
 
                   <li>
-                    <%= link_to '-Tábua personalizada', new_produto_path(:param => "tabuas"), :remote => :true %>
+                    <%= link_to '-Tábua personalizada', new_produto_path(:param => "tabuas"), :remote => :true, :id => 'li_produtos'  %>
                   </li>
 
                   <li>
-                     <%= link_to '-Cabrestos' %>
+                     <%= link_to '-Freios', new_produto_path(:param => "freios"), :remote => :true, :id => 'li_produtos'  %>
                   </li>
                   
                 </ul>
 
                 <ul id="ul1">
                   <li>
-                    <%= link_to '-Flambadores a gás', new_produto_path(:param => "flambadores"), :remote => :true %>
+                    <%= link_to '-Flambadores a gás', new_produto_path(:param => "flambadores"), :remote => :true, :id => 'li_produtos' %>
                   </li>
 
                   <li>
-                    <%= link_to '-Mochadores', new_produto_path(:param => "mochadores"), :remote => :true %>
+                    <%= link_to '-Mochadores', new_produto_path(:param => "mochadores"), :remote => :true, :id => 'li_produtos'  %>
                   </li>
 
                   <li>
-                     <%= link_to '-Marcadores', new_produto_path(:param => "marcadores"), :remote => :true %>
+                     <%= link_to '-Marcadores', new_produto_path(:param => "marcadores"), :remote => :true, :id => 'li_produtos'  %>
+                  </li>
+                  
+                  <li>
+                     <%= link_to '-Jogo de Números', new_produto_path(:param => "jogonumero"), :remote => :true, :id => 'li_produtos'  %>
                   </li>
                   
                 </ul>

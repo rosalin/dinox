@@ -69,11 +69,7 @@ Dinox::Application.routes.draw do
   end
   
   resources :produto do
-    collection do
-      get 'new'
-      get 'flambadores'
-      get 'marcadores'
-    end
+    get 'new'
   end
   
   
