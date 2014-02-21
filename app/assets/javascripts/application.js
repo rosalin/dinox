@@ -42,7 +42,6 @@ $(document).ready(function() {
         $(abas + '#' + id).removeClass('selected');  
         $(abas + '#' + id_link).addClass('selected');
     });
-    
    
    
     /*

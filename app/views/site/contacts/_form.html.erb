@@ -3,7 +3,7 @@
     <%= simple_form_for @site_contact, :remote => :true do |f| %>
           <div class="box-dados">
             <%= f.input :name, :label=>"Nome:"%>
-            <%= f.input :estado, :label=>"Estado:", collection: ["SP", "RJ"] %>
+            <%= f.input :estado, :label=>"Estado:" %>
             <%= f.input :cidade, :label=>"Cidade:" %>            
             <%= f.input :cep, :label=>"Cep:", :required=> true %>
             <%= f.input :telefone, :label=>"Fone:" %>
