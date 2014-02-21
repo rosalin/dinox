@@ -41,24 +41,6 @@ $(document).ready(function() {
     $(abas + ' a').mouseout(function (){
         $(abas + '#' + id).removeClass('selected');  
         $(abas + '#' + id_link).addClass('selected');
-    });
-   
-   
-    /*
-    var link_produto = '#li_produtos a';
-    var span = '.span';
+    }); 
     
-    $(link_produto).mouseover(function (){
-        $('.span').addClass('display');
-        
-        $(link_produto).mouseout(function (){
-            $('.li_pro').addClass('selected');
-        });
-    });
-    
-    $(span).mouseout(function (){
-        $('.li_pro').removeClass('selected');
-        $('.span').removeClass('display');
-    });
-    */
 });

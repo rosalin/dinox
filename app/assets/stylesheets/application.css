@@ -43,13 +43,20 @@ header nav ul {
 header nav ul li{
     display: inline-block;
     text-align: center;
-    margin-left: 9px;
-    border: 0px solid;   
+    padding-left: 4px; 
+    padding-right: 4px; 
     padding-top: 27px;
     height: 87px;
 }
 
 header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px;
+}
+
+#prod {
     display: block;
     text-decoration: none;
     color: #FFF;
@@ -173,6 +180,10 @@ span {
     display: none;
 }
 
+#li_produtos p{
+    color: #FFF;
+}
+
 #li_produtos:hover span  {
     display: block;
     position: absolute;
@@ -180,7 +191,7 @@ span {
     width: 520px;
     padding: 5px;
     margin-left: 470px;
-    margin-top: 15px;
+    margin-top: 9px;
     z-index: 998;
     color: #FFF;
     background: #005782;
