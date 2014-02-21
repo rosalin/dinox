@@ -12,7 +12,7 @@ class ParceiroController < ApplicationController
   def create_parceiro
     begin
       @contact = Contact.new(params[:site_contact])
-      if ParceiroMailer.new_contact(@contact).deliver
+      if ParceiroMailer.new_parceiro(@contact).deliver
         flash[:notice] = 'Obrigado pelo seu contato!'
         redirect_to new_parceiro_path
       else
