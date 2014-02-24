@@ -56,6 +56,12 @@ header nav ul li a {
     padding: 10px;
 }
 
+#li_produtos p{
+    color: #FFF;    
+    padding-left: 10px; 
+    padding-right: 10px; 
+}
+
 #prod {
     display: block;
     text-decoration: none;
@@ -178,10 +184,6 @@ footer .itemrodape2 p1 {
 
 span {
     display: none;
-}
-
-#li_produtos p{
-    color: #FFF;
 }
 
 #li_produtos:hover span  {
