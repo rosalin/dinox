@@ -15,32 +15,31 @@
 //= require_tree .
 
 
-
 $(document).ready(function() {
     
     $(".rslides").responsiveSlides({
         pager: true
     });
     
-    var abas = 'ul#menu li';
+    var abas = '.menu_li';
     var id;
-    var id_link;   
+    var id_link;
     
-    $(abas + ' a').click(function (){       
-        
+    $(abas + ' a').click(function (){
+        $('ul#menu li#li_produtos').removeClass('selected');
         $(abas + '#' + id_link).removeClass('selected');       
         id_link = $(this).attr('id' );    
         $(abas + '#' + id_link).addClass('selected');       
     });
     
-    $(abas + ' a').mouseover(function (){       
+    $('.li_menu').mouseover(function (){       
         id = $(this).attr('id');      
         $(abas + '#' + id).addClass('selected');       
     });
     
-    $(abas + ' a').mouseout(function (){
+    $('.li_menu').mouseout(function (){
         $(abas + '#' + id).removeClass('selected');  
-        $(abas + '#' + id_link).addClass('selected');
+        $(abas + '#' + id_link).addClass('selected');        
     }); 
     
 });

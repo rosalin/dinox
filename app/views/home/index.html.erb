@@ -6,8 +6,25 @@
     <div id="slider">
       
       <ul class="rslides">
-        <li><%= image_tag 'dinox.jpg', :alt=>"" %></li>
-        <li><%= image_tag 'dinoxmarca.jpg', :alt=>"" %></li>
+        <li><%= image_tag 'banner/index_banner_1.png', :alt=>"" %> 
+          <p class="texto_banner_titulo texto_banner_color">JOGO DE NÚMEROS</p>
+          <p class="texto_banner texto_banner_color">
+            confeccionados em aço inox
+          </p> 
+          <div class="link_banner">
+            <%= link_to 'veja mais', new_produto_path(:param => "jogonumero"), :remote => :true, :class => "link" %>
+          </div>
+        </li>
+        
+        <li><%= image_tag 'banner/index_banner_2.png', :alt=>"" %>
+          <p class="texto_banner_titulo texto_banner_color">FOGAREIRO</p>
+          <p class="texto_banner texto_banner_color">
+            atualmente os melhores, mais econômicos  e mais práticos.
+          </p>          
+          <div class="link_banner">
+            <%= link_to 'veja mais', new_produto_path(:param => "flambadores"), :remote => :true, :class => "link" %>
+          </div>
+        </li>
       </ul>
     
     </div>    
@@ -19,7 +36,7 @@
   <div class="center">
     <div id="homeconteudo">
     
-      <%= image_tag 'imgempresa.png', :id => 'imghome' %>
+      <%= image_tag 'img_empresa.png', :id => 'imghome' %>
       
       <h3>A Empresa</h3>
       

@@ -40,13 +40,24 @@ header nav ul {
     margin-top: -7px;   
 }
 
-header nav ul li{
+.menu_produtos {
     display: inline-block;
     text-align: center;
     padding-left: 4px; 
     padding-right: 4px; 
     padding-top: 27px;
     height: 87px;
+}
+
+.menu_li {
+    display: inline;
+    float: right;
+    text-align: center;
+    padding-left: 4px; 
+    padding-right: 4px; 
+    padding-top: 27px;
+    height: 86px;
+    margin-right: 4px;
 }
 
 header nav ul li a {
@@ -176,7 +187,6 @@ footer .itemrodape2 p1 {
     font-weight: bold;
     padding-left: 10px;
 }
-
 
 .selected {
     background: #005782;

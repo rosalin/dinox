@@ -15,47 +15,51 @@
       <%= link_to(image_tag("logo.png", :id => 'imglogo'), root_path) %>      
       
       <nav>
-        <ul id="menu">
+        <ul id="menu">          
 
-          <li id="li_empresa">
-            <%= image_tag 'empresa.png' %> <%=  link_to 'A empresa',  empresa_home_index_path, :remote=> :true, :id => 'li_empresa' %>              
+          <li id="li_contato" class="menu_li">
+            <%= image_tag 'contato.png' %> <%= link_to 'Contato', new_site_contact_path, :remote => :true, :id => 'li_contato', :class => 'li_menu' %>
+          </li>
+                   
+          <li id="li_parceiro" class="menu_li">
+            <%= image_tag 'parceiro.png' %> <%= link_to 'Seja um parceiro', new_parceiro_path, :remote => :true, :id => 'li_parceiro', :class => 'li_menu' %>
           </li>
 
-          <li id="li_produtos">
+          <li id="li_produtos" class="menu_li">
             <%= image_tag 'produtos.png' %> <p id="li_produtos">Produtos</p>
           
             <span>
               <nav id="nav">
           
                 <ul id="ul2">
-                  <li>
-                    <%= link_to '-Esporas', new_produto_path(:param => 'esporas'), :remote => :true, :id => 'li_produtos'  %>
+                  <li class="menu_produtos">
+                    <%= link_to '-Esporas', new_produto_path(:param => 'esporas'), :remote => :true, :id => 'li_produtos'%>
                   </li>
 
-                  <li>
+                  <li class="menu_produtos">
                     <%= link_to '-Tábua personalizada', new_produto_path(:param => "tabuas"), :remote => :true, :id => 'li_produtos'  %>
                   </li>
 
-                  <li>
+                  <li class="menu_produtos">
                      <%= link_to '-Freios', new_produto_path(:param => "freios"), :remote => :true, :id => 'li_produtos'  %>
                   </li>
                   
                 </ul>
 
                 <ul id="ul1">
-                  <li>
+                  <li class="menu_produtos">
                     <%= link_to '-Flambadores a gás', new_produto_path(:param => "flambadores"), :remote => :true, :id => 'li_produtos' %>
                   </li>
 
-                  <li>
+                  <li class="menu_produtos">
                     <%= link_to '-Mochadores', new_produto_path(:param => "mochadores"), :remote => :true, :id => 'li_produtos'  %>
                   </li>
 
-                  <li>
+                  <li class="menu_produtos">
                      <%= link_to '-Marcadores', new_produto_path(:param => "marcadores"), :remote => :true, :id => 'li_produtos'  %>
                   </li>
                   
-                  <li>
+                  <li class="menu_produtos">
                      <%= link_to '-Jogo de Números', new_produto_path(:param => "jogonumero"), :remote => :true, :id => 'li_produtos'  %>
                   </li>
                   
@@ -65,12 +69,8 @@
             </span>
           </li>
           
-          <li id="li_parceiro">
-            <%= image_tag 'parceiro.png' %> <%= link_to 'Seja um parceiro', new_parceiro_path, :remote => :true, :id => 'li_parceiro' %>
-          </li>
-
-          <li id="li_contato">
-            <%= image_tag 'contato.png' %> <%= link_to 'Contato', new_site_contact_path, :remote => :true, :id => 'li_contato' %>
+          <li id="li_empresa" class="menu_li">
+            <%= image_tag 'empresa.png' %> <%=  link_to 'A empresa',  empresa_home_index_path, :remote=> :true, :id => 'li_empresa', :class => 'li_menu'  %>              
           </li>
 
         </ul>
