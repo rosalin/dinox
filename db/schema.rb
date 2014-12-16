@@ -13,7 +13,14 @@
 
 ActiveRecord::Schema.define(:version => 20140219135508) do
 
-  create_table "contacts", :force => true do |t|
+  create_table "newsletters", :force => true do |t|
+    t.string   "email"
+    t.string   "nome"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "site_contacts", :force => true do |t|
     t.string   "name"
     t.string   "email"
     t.string   "telefone"
@@ -27,13 +34,6 @@ ActiveRecord::Schema.define(:version => 20140219135508) do
     t.string   "numero"
     t.string   "bairro"
     t.string   "cpf_cnpj"
-  end
-
-  create_table "newsletters", :force => true do |t|
-    t.string   "email"
-    t.string   "nome"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
   end
 
 end
