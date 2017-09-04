@@ -7,8 +7,15 @@
   <%= csrf_meta_tags %>
 
 </head>
-<body>
+
+<div id="caixa-comunicado">
+	<div class="close"></div>
+	<%= render :partial => "pupup_comunicado_fraude" %>
+</div>
   
+<div id="background_opacity"></div>
+
+<body>  
   <header>
     <div class="center">
       

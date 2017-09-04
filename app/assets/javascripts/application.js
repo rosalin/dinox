@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require_tree .
 
-
 $(document).ready(function() {
     
     $(".rslides").responsiveSlides({
@@ -40,6 +39,24 @@ $(document).ready(function() {
     $('.li_menu').mouseout(function (){
         $(abas + '#' + id).removeClass('selected');  
         $(abas + '#' + id_link).addClass('selected');        
-    }); 
+    });
+    
+    if($("#caixa-comunicado").length){
+    	$(function() {
+			/* caixa-comunicado representa a id onde o caixa de comunicado deve ser criada no html */
+			$( "#caixa-comunicado" ).dialog({
+			  dialogClass: 'comunicado-dialog',
+			  resizable: false,
+			  width: "75%",
+			  modal: true
+			});
+			$("#background_opacity").css("display","block");
+		});
+	    
+	    $("div.close").click(function (){
+	    	$("#caixa-comunicado").dialog("close");
+	    	$("#background_opacity").css("display","none");
+	    });
+    };
     
 });
